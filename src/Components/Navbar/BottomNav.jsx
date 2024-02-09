@@ -82,8 +82,8 @@ const BottomNav = () => {
                                }`}
             >
               {link.soon}
-              <Link // Use Link instead of anchor tag
-                to={link.link} // Specify the link destination
+              <Link 
+                to={link.link} 
                 className={`link ${link.border} w-full`}
                 onClick={() => handleLinkClick(index)}
               >
