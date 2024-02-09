@@ -81,7 +81,7 @@ const CustomSelect = ({ option, icon, label, text ,placeholder }) => {
                     selectedOption === item ? ' text-[#887EFF]' : ''
                   }`}
                   >{icon}</span>
-                  <span className={`text-[14px] font-semibold font-Poppins line-[14px] text-[#6B6B6B] ${
+                   <span className={`text-[10px] sm:text-[13px] md:text-[13px] lg:text-[13px] font-semibold font-Poppins line-[14px] text-[#6B6B6B] ${
                     selectedOption === item ? ' text-[#887EFF]' : ''
                   }`} >
                     {" "}

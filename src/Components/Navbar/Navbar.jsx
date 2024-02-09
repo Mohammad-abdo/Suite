@@ -17,7 +17,7 @@ const Navbar = () => {
     <Disclosure as="nav" className="">
     {({ open }) => (
       <>
-        <div className="mx-auto  px-2 ">
+        <div className="mx-auto  px-4 ">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
               {/* Mobile menu button*/}
@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="flex">
             <div className="flex flex-shrink-0 items-center">
               <img
-                className="h-72 w-70"
+                className="h-40 w-40  md:h-72 md:w-72"
                 src="/public/logo.png"
                 alt="Your Company"
               />
@@ -48,9 +48,11 @@ const Navbar = () => {
           </div>
 
           {/* Notification and profile dropdown */}
-          <div className="absolute inset-y-0 right-0   hidden sm:flex  px-10 items-center justify-between pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 rounded-2xl w-[80%]  bg-[#181818]">
+          <div className="absolute inset-y-0 right-0   hidden sm:flex
+            px-10 items-center justify-between pr-2 sm:static sm:inset-auto 
+            sm:ml-6 sm:pr-0 rounded-2xl w-[80%]  bg-[#181818]">
             {/* Search input */}
-            <div className='w-96 '>
+            <div className='md:w-72 xl:w-96 md:72 lg:w-96 w-60 '>
               <div className="flex items-center justify-between     ">
 
                 <div className="relative w-96 ">
@@ -60,12 +62,12 @@ const Navbar = () => {
                     </svg>
              
                   </div>
-                  <input id="search" name="search" className="block  w-full pl-10 pr-3 py-2 border  border-none blur-none  rounded-2xl leading-5 bg-[#D5D5D5] text-gray-900 placeholder-gray-500 focus:outline-none focus:ring focus:ring-transparent focus:border-trasparent sm:text-sm" placeholder="Search" type="search" />
+                  <input id="search" name="search" className="block w-full  pl-10 pr-3 py-2 border  border-none blur-none  rounded-2xl leading-5 bg-[#D5D5D5] text-gray-900 placeholder-gray-500 focus:outline-none focus:ring focus:ring-transparent focus:border-trasparent sm:text-sm" placeholder="Search" type="search" />
                 </div>
               </div>
             </div>
 
-            <div className='inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 '>
+            <div className='inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto  '>
               <button
                 type="button"
                 className="relative rounded-full p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-[1px] focus:ring-offset-[1px] focus:ring-offset-[#554DB7]"
@@ -190,8 +192,8 @@ const Navbar = () => {
 
         <Disclosure.Panel className="sm:hidden">
        
-       <div className="flex bg-[#181818] w-full">
-       <div className="space-y-1 px-2 pb-3 pt-2 bg-[#181818] shadow-white w-[60%]">
+       <div className="flex bg-[#181818] w-full items-center ">
+       <div className="space-y-1 px-2 pb-3 pt-2 bg-[#181818] shadow-white w-[50%]">
           <div className=''>
               <div className="flex items-center justify-between">
 
@@ -201,7 +203,7 @@ const Navbar = () => {
                       <path fillRule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clipRule="evenodd"></path>
                     </svg>
                   </div>
-                  <input id="search" name="search" className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-2xl leading-5 bg-[#D5D5D5] text-gray-900 placeholder-gray-500 focus:outline-none focus:ring focus:ring-indigo-400 focus:border-indigo-400 sm:text-sm" placeholder="Search" type="search" />
+                  <input id="search" name="search" className="block w-full pl-10 pr-3 h-6 text-sm border border-gray-300 rounded-2xl leading-5 bg-[#D5D5D5] text-gray-900 placeholder-gray-500 focus:outline-none focus:ring focus:ring-indigo-400 focus:border-indigo-400 sm:text-sm" placeholder="Search" type="search" />
                 </div>
               </div>
             </div>
@@ -214,7 +216,7 @@ const Navbar = () => {
                 <span className="absolute -inset-1.5" />
                 <span className="sr-only ">View notifications</span>
                 <div className='absolute flex items-center justify-center top-[0px] right-[4px] ml-1'> <span className='text-[9px] h-3 w-3 bg-[#118F4B] text-yellow-50 rounded-3xl   '>6</span></div>
-                <FaBell className="h-5 w-5 text-[#554DB7]" aria-hidden="true" />
+                <FaBell className="h-4 4-5 text-[#554DB7]" aria-hidden="true" />
               </button>
 
               {/* Profile dropdown */}
@@ -223,7 +225,7 @@ const Navbar = () => {
                   <span className="absolute -inset-1.5" />
                   <span className="sr-only tex-white">Open user menu</span>
                   <img
-                    className="h-8 w-8 rounded-full"
+                    className="h-6 w-6 rounded-full"
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                     alt=""
                   />
@@ -272,7 +274,7 @@ const Navbar = () => {
                 </Transition>
               </Menu>
               <div className='mx-2'>
-                <span className='text-[#ededed] text-[9px]'>Mohamed <br /> abdo</span>
+                <div className='text-[#ededed] text-[8px]'> <div>Moahmed</div>abdo </div>
               </div>
               <div className=' '>
                 <Menu as="div" className="relative   ">

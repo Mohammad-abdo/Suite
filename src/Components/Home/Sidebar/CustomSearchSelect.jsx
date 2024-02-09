@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { GiDoubleDiaphragm } from "react-icons/gi";
+import { LuLayers } from "react-icons/lu";
 
 const CustomSearchSelect = ({ option, icon, label, text }) => {
   const [top, setTop] = useState(true);
@@ -51,18 +51,19 @@ const CustomSearchSelect = ({ option, icon, label, text }) => {
         >
           <div className="flex justify-between items-center">
             {" "}
-            <div className="mx-2 flex items-center">
+            <div className="mx-2 flex items-center ">
               <span className="mx-2">
                 {" "}
-                <GiDoubleDiaphragm />
+                <LuLayers />
               </span>{" "}
               <input
   type="text"
-  className="l focus:outline-none appearance-none blur-none focus:blur-none text-[12px] bg-transparent border-none p-[0] shadow-none  focus:shadow-none outline-none  focus:border-none "
+  className="w-[80%] focus:outline-none pointer-events-none appearance-none border border-none text-[12px] bg-transparent p-[0] shadow-none focus:shadow-none outline-none focus:blur-none focus:border-none"
   placeholder="Insert text here"
-  value={searchInput}
+  value={selectedOption || searchInput}
   onChange={(e) => setSearchInput(e.target.value)}
 />
+
 
               {/* <span className="text-[12px]"> Health Care</span> */}
             </div>{" "}
@@ -91,7 +92,7 @@ const CustomSearchSelect = ({ option, icon, label, text }) => {
                     selectedOption === item ? ' text-[#887EFF]' : ''
                   }`}
                   >{icon}</span>
-                  <span className={`text-[14px] font-semibold font-Poppins line-[14px] text-[#6B6B6B] ${
+                  <span className={`text-[10px] sm:text-[13px] md:text-[13px] lg:text-[13px] font-semibold font-Poppins line-[14px] text-[#6B6B6B] ${
                     selectedOption === item ? ' text-[#887EFF]' : ''
                   }`} >
                     {" "}

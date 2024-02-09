@@ -67,7 +67,7 @@ const Sidebar = () => {
               <CustomSearchSelect option={ ['Low risk','Mid risk','High risk','Option text here'] } icon={ <FaRegCheckCircle/> } label={ 'Risc' } text={ undefined }/>
             </div>
 
-      <button className='btn border border-none bg-purple-600 font-bold mt-5 py-2 rounded-xl w-full'>Apply Filter</button>
+      <button className='btn border border-none bg-purple-600 font-bold mt-5 py-2 text-sm md:text-lg lg:text-2xl xl:text-2xl sm:text-2xl rounded-xl w-full'>Apply Filter</button>
 
       
     </div>
