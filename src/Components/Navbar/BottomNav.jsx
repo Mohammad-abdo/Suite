@@ -127,7 +127,7 @@ const Links = [
     title: "Alerts",
     link: "#",
     border: "border-r-[1.47px] border-[#B9B9B9]",
-    white: false,
+    white: true,
   },
   {
     title: "Training",
