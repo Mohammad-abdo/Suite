@@ -2,9 +2,6 @@ import React from 'react';
 import { Book, Dolar, Mony, Rang } from '../../../assets';
   
 
- 
-
-  
 
   
 const TextContent = [
@@ -60,7 +57,7 @@ const RightSection = () => {
         <div className="py-3 sm:px-8 xl:px-8 px-3 grid grid-cols-4">
           {ContentInfo.map((item, index) => (
             <div className={`flex text-start`} key={index}>
-              <div className={`${item.border} flex text-start items-center w-[100%] xl:w-[70%] md:w-[90%] sm:w-[70%]`}>
+              <div className={`${item.border} flex text-start items-center w-[100%] xl:w-[70%] md:w-[90%] lg:w-[70%] sm:w-[70%]`}>
                 <img src={item.src} alt="" className='sm:w-[26px] xl:w-[26px] w-[10px] h-auto mr-2' />
                 <span className='text-[#FFFFFF] sm:text-[16px] xl:text-[16px] md:text-[16px] text-[10px] font-[Nunito Sans] bg-dark'>{item.content}</span>
               </div>

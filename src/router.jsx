@@ -1,7 +1,6 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import AppLayout from "./pages/AppLayout";
-import Home from "./Components/Home/Home";
 import NotFound from "./pages/NotFound";
 import Alrets from "./pages/Alrets";
 import Trading from "./pages/Trading";
