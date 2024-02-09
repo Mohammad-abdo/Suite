@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
 import { FaBell } from "react-icons/fa";
 import { IoIosArrowDropdown } from "react-icons/io";
-import { IoIosSearch } from "react-icons/io";
+import { Logo } from '../../assets';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="flex flex-shrink-0 items-center">
               <img
                 className="h-40 w-40  md:h-72 md:w-72"
-                src="/src/assets/images/logo.png"
+                src={Logo}
                 alt="Your Company"
               />
             </div>

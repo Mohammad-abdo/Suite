@@ -1,5 +1,12 @@
 import React from 'react';
+import { Book, Dolar, Mony, Rang } from '../../../assets';
+  
 
+ 
+
+  
+
+  
 const TextContent = [
   {
     p: 'Doloribus rerum odio voluptatibus labore illum corrupti, itaque dolorum.'
@@ -24,22 +31,22 @@ const TextContent = [
 
 const ContentInfo = [
   {
-    src: '/src/assets/images/dolar.png',
+    src: Dolar,
     content: '$TSLA',
     border: 'border-[#B9B9B9] sm:border-r-[1.47px] xl:border-r-[1.47px] md:border-r-[1.47px] lg:border-r-[1.47px]'
   },
   {
-    src: '/src/assets/images/book.png',
+    src: Book,
     content: '200 Contracts',
     border: 'border-[#B9B9B9] sm:border-r-[1.47px] xl:border-r-[1.47px] md:border-r-[1.47px] lg:border-r-[1.47px]'
   },
   {
-    src: '/src/assets/images/rang.png',
+    src: Rang,
     content: '12.2%',
     border: 'border-[#B9B9B9] sm:border-r-[1.47px] xl:border-r-[1.47px] md:border-r-[1.47px] lg:border-r-[1.47px]'
   },
   {
-    src: '/src/assets/images/mony.png',
+    src: Mony,
     content: 'High risk'
   },
   // Add more items as needed
