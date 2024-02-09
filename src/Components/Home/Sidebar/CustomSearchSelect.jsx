@@ -58,7 +58,7 @@ const CustomSearchSelect = ({ option, icon, label, text }) => {
               </span>{" "}
               <input
   type="text"
-  className="w-full focus:outline-none appearance-none blur-none focus:blur-none  bg-transparent border-none p-[0] shadow-none  focus:shadow-none outline-none  focus:border-none "
+  className="l focus:outline-none appearance-none blur-none focus:blur-none text-[12px] bg-transparent border-none p-[0] shadow-none  focus:shadow-none outline-none  focus:border-none "
   placeholder="Insert text here"
   value={searchInput}
   onChange={(e) => setSearchInput(e.target.value)}
