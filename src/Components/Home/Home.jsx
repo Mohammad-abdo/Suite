@@ -5,7 +5,7 @@ import RightSection from './RightSection/RightSection'
 const Home = () => {
   return (
     <div className='w-[97%]  rounded-xl bg-[#181818] py-5 mx-auto mt-5'>
-      <div className="flex gap-10 h-full  w-[97%] mx-auto ">
+      <div className="flex gap-10 h-auto  w-[97%] mx-auto ">
       {/* Sidebar */} 
       <div className="w-64 bg-[#212121] text-white rounded-2xl">
         {/* Sidebar Content */}
@@ -20,7 +20,7 @@ const Home = () => {
       <div className="flex-1 items-center bg-[#212121] text-white rounded-xl">
         {/* Main Content Area */}
         <div className="p-2">
-  <RightSection/>
+        <RightSection/>
         </div>
       </div>
     </div>
