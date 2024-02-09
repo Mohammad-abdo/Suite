@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="flex flex-shrink-0 items-center">
               <img
                 className="h-40 w-40  md:h-72 md:w-72"
-                src="assets/images/logo.png"
+                src="assets/logo.png"
                 alt="Your Company"
               />
             </div>
@@ -192,7 +192,7 @@ const Navbar = () => {
 
         <Disclosure.Panel className="sm:hidden">
        
-       <div className="flex bg-[#181818] w-full items-center ">
+       <div className="flex bg-[#181818] w-full items-center justify-between ">
        <div className="space-y-1 px-2 pb-3 pt-2 bg-[#181818] shadow-white w-[50%]">
           <div className=''>
               <div className="flex items-center justify-between">

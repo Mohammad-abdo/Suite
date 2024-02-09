@@ -1,18 +1,15 @@
 import React  from 'react'
-
 import './App.css'
-import Navbar from './Components/Navbar/Navbar'
-import Home from './Components/Home/Home'
-import BottomNav from './Components/Navbar/BottomNav'
+import { RouterProvider } from 'react-router-dom'
+import router from "./router";
+
 
 function App() {
 
 
   return (
 <>
-<Navbar/>
-<BottomNav/>
-<Home/>
+<RouterProvider router={router} />
 </>
   )
 }
