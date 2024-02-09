@@ -36,7 +36,7 @@ const Navbar = () => {
             <div className="flex flex-shrink-0 items-center">
               <img
                 className="h-40 w-40  md:h-72 md:w-72"
-                src="assets/logo.png"
+                src="/src/assets/images/logo.png"
                 alt="Your Company"
               />
             </div>
