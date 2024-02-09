@@ -23,24 +23,24 @@ const TextContent  =[
 ]
 const ContentInfo=[
   {
-    src:'/public/images/dolar.png',
+    src:'images/dolar.png',
     content:'$TSLA',
     border:' border-[#B9B9B9] sm:border-r-[1.47px] xl:border-r-[1.47px] md:border-r-[1.47px] lg:border-r-[1.47px]'
   },
   {
-    src:'/public/images/book.png',
+    src:'images/book.png',
     content:'200 Contracts',
       border:' border-[#B9B9B9] sm:border-r-[1.47px] xl:border-r-[1.47px] md:border-r-[1.47px] lg:border-r-[1.47px]'
 
   },
   {
-    src:'/public/images/rang.png',
+    src:'images/rang.png',
     content:'12.2%',
       border:' border-[#B9B9B9] sm:border-r-[1.47px] xl:border-r-[1.47px] md:border-r-[1.47px] lg:border-r-[1.47px]'
 
   },
   {
-    src:'/public/images/mony.png',
+    src:'images/mony.png',
     content:'High risk',
     
   },
