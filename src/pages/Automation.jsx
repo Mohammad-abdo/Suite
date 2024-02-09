@@ -2,9 +2,9 @@ import React from 'react'
 
 const Automation = () => {
   return (
-    <div>
-      <h1>Automation</h1>
-<img src="/src/assets/images/book.png" alt="" />
+    <div className='text-center'>
+      <h1 className='text-4xl text-purple-600'>Automation</h1>
+
     </div>
   )
 }
