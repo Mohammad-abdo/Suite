@@ -49,7 +49,7 @@ const BottomNav=()=>{
     
    {
     Links.map((link,index)=>(
-        <div key={index} className='text-sm sm:text-3xl xl:text-3xl text-center flex items-center justify-center text-[#484848] w-full '> {link.soon}
+        <div key={index} className='text-sm sm:text-3xl md:text-lg xl:text-3xl text-center flex items-center justify-center text-[#484848] w-full '> {link.soon}
 <a href={link.link} className={` ${link.border} w-full `} >  {link.title}</a>
         </div> 
      
