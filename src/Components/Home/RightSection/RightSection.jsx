@@ -59,7 +59,7 @@ const RightSection = () => {
   {/* img + word */}
   <div className={`${item.border} flex text-start items-center ju w-[100%] xl:w-[70%] md:w-[90%] sm:w-[70%]`}>
      <img src={item.src} alt="" className='sm:w-[26px] xl:w-[26px] w-[10px] h-auto mr-2' />
-  <span className='text-[#FFFFFF] sm:text-[14px] xl:text-[14pxpx] md:text-[10px] text-[10px] font-[Nunito Sans] bg-dark'> {item.content} </span>
+  <span className='text-[#FFFFFF] sm:text-[16px] xl:text-[16pxpx] md:text-[14px] text-[10px] font-[Nunito Sans] bg-dark'> {item.content} </span>
   </div>
  
   </div>
