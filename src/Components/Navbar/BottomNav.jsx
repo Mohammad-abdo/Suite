@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom"; // Import useLocation hook
+import { Link, useLocation } from "react-router-dom"; // Import Link from react-router-dom
 import "./Navbar.css";
 
 const Links = [
@@ -51,13 +51,14 @@ const Links = [
   },
 ];
 
+
 const BottomNav = () => {
   const location = useLocation(); // Get current URL location
   const [activeIndex, setActiveIndex] = useState(null);
 
   useEffect(() => {
     // Find the index of the link whose route matches the current location pathname
-    const index = Links.findIndex(link => link.link === location.pathname);
+    const index = Links.findIndex((link) => link.link === location.pathname);
     setActiveIndex(index);
   }, [location.pathname]);
 
@@ -81,13 +82,13 @@ const BottomNav = () => {
                                }`}
             >
               {link.soon}
-              <a
-                href={link.link}
+              <Link // Use Link instead of anchor tag
+                to={link.link} // Specify the link destination
                 className={`link ${link.border} w-full`}
                 onClick={() => handleLinkClick(index)}
               >
                 {link.title}
-              </a>
+              </Link>
             </div>
           ))}
         </div>
