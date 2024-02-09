@@ -49,7 +49,7 @@ const Navbar = () => {
 
           {/* Notification and profile dropdown */}
           <div className="absolute inset-y-0 right-0   hidden sm:flex
-            px-10 items-center justify-between pr-2 sm:static sm:inset-auto 
+            px-3 items-center justify-between pr-2 sm:static sm:inset-auto 
             sm:ml-6 sm:pr-0 rounded-2xl w-[80%]  bg-[#181818]">
             {/* Search input */}
             <div className='md:w-72 xl:w-96 md:72 lg:w-96 w-60 '>
